@@ -47,7 +47,7 @@ class PlantasViewModel(
         val searchResult = plantas.filter {
             it.nombre.uppercase().contains(searchText.uppercase())
         }
-        uiState = PlantasEstado.Resultado(emptyList(),searchText)
+        uiState = PlantasEstado.Resultado(searchResult,searchText) //siempre estuvo la corrección comentada abajo 🙊
 //        uiState = PlantasEstado.Resultado(searchResult,searchText)
     }
 }
